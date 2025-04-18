@@ -22,7 +22,7 @@ namespace LearningHubAPI.Controllers
         [HttpGet]
         [Route("GetDiscountsByUserID/{userID}")]
         [Authorize]
-        [IdentityRequiresClaims(ClaimTypes.Role, new[] { "3","2" })]
+        [IdentityRequiresClaims(ClaimTypes.Role, new[] { "3", "2" })]
         public IActionResult GetDiscountsByUserID(decimal userID) 
         {
             if (userID != 0)
